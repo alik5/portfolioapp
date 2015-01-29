@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>Portfolioapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	 <div class="wrapper">
+        <header class="header">
+            <div class="menu-wrapper">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-menu-3"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Ali FitzGerald</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Works <span class="icon-angle-down"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                        <li><a href="portfolio-2.html">Portfolio 2 Columns</a></li>
+                                        <li><a href="portfolio-3.html">Portfolio 3 Columns</a></li>
+                                        <li><a href="portfolio-4.html">Portfolio 4 Columns</a></li>
+                                        <li><a href="portfolio-classic.html">Portfolio Classic</a></li>
+                                        <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                                        <li><a href="single-portfolio.html">Single Portfolio</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a class="social-icon" href="#"><i class="icon-instagram"></i></a></li>
+                                <li><a class="social-icon" href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a class="social-icon" href="#"><i class="icon-facebook"></i></a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
+                </nav>
+            </div><!-- end menu-wrapper -->
+        </header><!-- end header -->
+	<div class="container">
+	<%= yield %>
+	</div>
+
+</body>
+</html>
