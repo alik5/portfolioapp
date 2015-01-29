@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
   <title>Portfolioapp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app="app">
 	 <div class="wrapper">
         <header class="header">
             <div class="menu-wrapper">
@@ -47,9 +47,11 @@
                 </nav>
             </div><!-- end menu-wrapper -->
         </header><!-- end header -->
-	<div class="container">
-	<%= yield %>
-	</div>
+        
+        	<div class="container">
+        	<%= yield %>
+        	</div>
+
 
 </body>
 </html>

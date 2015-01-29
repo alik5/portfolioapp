@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require todomvc-common/base.css
  *= require_self
  */
 @import "bootstrap-sprockets";
@@ -26,6 +27,7 @@ body {
 
 h1 {
 	font-weight: 300; 
+	letter-spacing: .1em;
 }
 
 nav li {
@@ -34,4 +36,8 @@ nav li {
 
 #welcome-page {
 	text-align: center; 
+}
+
+.my-name {
+	color: #E80025;
 }
